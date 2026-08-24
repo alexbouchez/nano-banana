@@ -1,3 +1,6 @@
 node_modules/
 .env
 .claude/*.local.md
+
+# Images produites par l'outil, à la racine
+nano-gen-*.png

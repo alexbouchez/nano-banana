@@ -42,6 +42,17 @@ Uses `@google/genai` SDK. Image generation via `models.generateContent()` with `
 - [guinacio/claude-image-gen](https://github.com/guinacio/claude-image-gen) — Hybrid skill+MCP, dynamic model discovery
 - Transparency technique: Julien De Luca's difference matting — white+black passes, alpha extraction via pixel math
 
+## Plugin Update
+
+- Local directory source: `/plugin update` won't detect changes — must `/plugin uninstall` then `/plugin install`
+- Always bump `version` in `package.json` before publishing changes
+
+## Prompt Engineering
+
+- Nano Banana native prompts are flowing descriptions (no labels like SUBJECT/CONTEXT/STYLE)
+- Reverse engineering system prompt uses SCS as internal thinking structure but outputs label-free prompts
+- Best prompts include technical params: focal length, lighting setup, color grading, resolution keywords
+
 ## Rules
 
 - Never commit `.env` (contains API key)
